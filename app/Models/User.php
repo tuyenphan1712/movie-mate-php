@@ -15,7 +15,13 @@ class User extends Authenticatable
     protected $keyType = 'string'; // Thiết lập kiểu khóa chính là chuỗi
 
     protected $fillable = [
-        'name', 'email', 'password', 'user_status',
+        'name',
+        'email',
+        'phone',
+        'birthday',
+        'gender',
+        'password',
+        'user_status',
     ];
 
     protected $casts = [
